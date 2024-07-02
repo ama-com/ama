@@ -7,8 +7,8 @@ public interface Dao {
 	String DB_USER = "root";
 	String DB_PASS = "";
 	
-	public List<Object> search( ) ;
-	public List<Object> search(Object object);
-	public void create (Object object);
-	public void remove (Object object);
+	public List<Object> searchAll( ) ;
+	public boolean search(Object object);
+	public boolean create (Object object);
+	public boolean remove (Object object);
 }
