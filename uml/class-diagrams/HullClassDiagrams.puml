@@ -1,0 +1,184 @@
+@startuml
+
+class RankingServlet {
+    # doGet() : void
+    # doPost() : void
+}
+
+class Ranking {
+    {method} + getRanking(): void
+}
+
+RankingServlet "1" -- "1" Ranking : create
+
+class AuthenticationServlet {
+    {method} # doGet(): void
+    {method} # doPost(): void
+}
+
+class Authentication {
+    {method} + login(account: Account): boolean
+    {method} + logout(account: Account): boolean
+}
+
+AuthenticationServlet "1" -- "1" Authentication : create
+
+class AccountRegistrationServlet {
+    {method} + login(account: Account): boolean
+    {method} + logout(account: Account): boolean
+}
+
+class AccountRegistration {
+    {method} + createAccount(account: Account): boolean
+    {method} + searchAccount(): List<Account>
+}
+
+AccountRegistrationServlet -- AccountRegistration : create
+
+class GeneralServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class CartServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class Cart {
+    {method} + getCart(account: Account): void
+    {method} + updateCart(cart: Cart): void
+    {method} + deleteCart(cart: Cart): void
+}
+
+CartServlet "1" -- "1" Cart : create
+
+class OrderServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class OrderManagement {
+    - accountId: int
+    - orderServlet(account: Account)
+    {method} + getOrder(account: Account): void
+    {method} + removeOrder(): void
+}
+
+OrderServlet -- OrderManagement : creates
+
+class AdministratorServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class ProductServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class ProductRegister {
+    {method} + selectAll(): void
+    {method} + createProduct(product: Product): boolean
+    {method} + removeProduct(product: Product): boolean
+    {method} + updateProduct(oldProduct: Product, newProduct: Product): boolean
+}
+
+ProductServlet -- ProductRegister : create
+
+class AccountManagementServlet {
+    # doGet(): void
+    # doPost(): void
+}
+
+class AccountManagement {
+    {method} + searchAll(): void
+    {method} + search(account: Account): List<Account>
+    {method} + updateAccount(account: Account): boolean
+    {method} + removeAccount(account: Account): boolean
+}
+
+AccountManagementServlet -- AccountManagement : create
+
+interface DAO {
+    + JDBC_URL: String
+    + DB_USER: String
+    + DB_PASS: String
+}
+
+class AccountDAO implements DAO {
+    {method} + searchAll(): List<Account>
+    {method} + search(account: Account): List<Account>
+    {method} + create(account: Account): boolean
+    {method} + remove(account: Account): boolean
+    {method} + update(account: Account): boolean
+}
+
+class ProductDAO implements DAO {
+    {method} + searchAll(): List<Product>
+    {method} + search(product: Product): List<Product>
+    {method} + create(product: Product): boolean
+    {method} + remove(product: Product): boolean
+    {method} + update(oldProduct: Product, newProduct: Product): boolean
+}
+
+class OrderDAO implements DAO {
+    {method} + searchAll(): List<Order>
+    {method} + search(order: Order): List<Order>
+    {method} + create(order: Order): boolean
+    {method} + remove(order: Order): boolean
+    {method} + update(order: Order): boolean
+}
+
+class DataModel {
+    - id: int
+    - additionalDate: ZonedDateTime
+    - name: String
+    - imagePass: String
+    {method} + getId(): int
+    {method} + setId(id: int): void
+    {method} + getAdditionalDate(): ZonedDateTime
+    {method} + setAdditionalDate(additionalDate: ZonedDateTime): void
+    {method} + getName(): String
+    {method} + setName(name: String): void
+    {method} + getImagePath(): String
+    {method} + setImagePath(imagePath: String): void
+}
+
+class Account extends DataModel {
+    - password: String
+    - isAdmin: boolean
+    {method} + setPassword(password: String): void
+    {method} + setIsAdmin(isAdmin: boolean): void
+    {method} + getPassword(): String
+    {method} + getIsAdmin(): boolean
+}
+
+class Product extends DataModel {
+    - explanation: String
+    - price: int
+    - stock: int
+    - subImagePaths: ArrayList<String>
+    {method} + getExplanation(): String
+    {method} + setExplanation(explanation: String): void
+    {method} + getPrice(): int
+    {method} + setPrice(price: int): void
+    {method} + getStock(): int
+    {method} + setStock(stock: int): void
+    {method} + getSubImagePaths(): ArrayList<String>
+    {method} + setSubImagePaths(subImagePaths: ArrayList<String>): void
+}
+
+class Order extends DataModel {
+    - accountId: int
+    - productId: int
+    - pieces: int
+    {method} + getAccountId(): int
+    {method} + setAccountId(accountId: int): void
+    {method} + getProductId(): int
+    {method} + setProductId(productId: int): void
+    {method} + getPieces(): int
+    {method} + setPieces(pieces: int): void
+}
+
+@enduml

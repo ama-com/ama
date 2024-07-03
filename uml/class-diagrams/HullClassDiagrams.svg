@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="582px" preserveAspectRatio="none" style="width:4634px;height:582px;background:#FFFFFF;" version="1.1" viewBox="0 0 4634 582" width="4634px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <!--class RankingServlet-->
+        <g id="elem_RankingServlet">
+            <rect codeLine="2" fill="#F1F1F1" height="80.9766" id="RankingServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134" x="15.5" y="89.93"/>
+            <ellipse cx="30.5" cy="105.93" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M32.9731,112.0731 Q32.3921,112.3719 31.7529,112.5213 Q31.1138,112.6707 30.4082,112.6707 Q27.9014,112.6707 26.5815,111.0189 Q25.2617,109.367 25.2617,106.2459 Q25.2617,103.1165 26.5815,101.4647 Q27.9014,99.8128 30.4082,99.8128 Q31.1138,99.8128 31.7612,99.9622 Q32.4087,100.1116 32.9731,100.4105 L32.9731,103.1331 Q32.3423,102.5521 31.7488,102.2823 Q31.1553,102.0125 30.5244,102.0125 Q29.1797,102.0125 28.4949,103.0792 Q27.8101,104.1458 27.8101,106.2459 Q27.8101,108.3377 28.4949,109.4044 Q29.1797,110.471 30.5244,110.471 Q31.1553,110.471 31.7488,110.2012 Q32.3423,109.9315 32.9731,109.3504 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="44.5" y="111.221">RankingServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="16.5" x2="148.5" y1="121.93" y2="121.93"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="16.5" x2="148.5" y1="129.93" y2="129.93"/>
+            <polygon fill="#FFFF44" points="26.5,138.6741,30.5,142.6741,26.5,146.6741,22.5,142.6741" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="35.5" y="147.4652">doGet() : void</text>
+            <polygon fill="#FFFF44" points="26.5,155.1624,30.5,159.1624,26.5,163.1624,22.5,159.1624" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="35.5" y="163.9534">doPost() : void</text>
+        </g>
+        <!--class Ranking-->
+        <g id="elem_Ranking">
+            <rect codeLine="7" fill="#F1F1F1" height="64.4883" id="Ranking" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="151" x="7" y="420.79"/>
+            <ellipse cx="50.35" cy="436.79" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M52.8231,442.9331 Q52.2421,443.2319 51.6029,443.3813 Q50.9638,443.5307 50.2582,443.5307 Q47.7514,443.5307 46.4315,441.8789 Q45.1117,440.227 45.1117,437.1059 Q45.1117,433.9765 46.4315,432.3247 Q47.7514,430.6728 50.2582,430.6728 Q50.9638,430.6728 51.6112,430.8222 Q52.2587,430.9716 52.8231,431.2705 L52.8231,433.9931 Q52.1923,433.4121 51.5988,433.1423 Q51.0053,432.8725 50.3744,432.8725 Q49.0297,432.8725 48.3449,433.9392 Q47.6601,435.0058 47.6601,437.1059 Q47.6601,439.1977 48.3449,440.2644 Q49.0297,441.331 50.3744,441.331 Q51.0053,441.331 51.5988,441.0612 Q52.1923,440.7915 52.8231,440.2104 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="70.65" y="442.081">Ranking</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="157" y1="452.79" y2="452.79"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="157" y1="460.79" y2="460.79"/>
+            <ellipse cx="18" cy="474.5341" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="27" y="478.3252">getRanking(): void</text>
+        </g>
+        <!--class AuthenticationServlet-->
+        <g id="elem_AuthenticationServlet">
+            <rect codeLine="13" fill="#F1F1F1" height="80.9766" id="AuthenticationServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="179" x="283" y="89.93"/>
+            <ellipse cx="298" cy="105.93" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M300.4731,112.0731 Q299.8921,112.3719 299.2529,112.5213 Q298.6138,112.6707 297.9082,112.6707 Q295.4014,112.6707 294.0815,111.0189 Q292.7617,109.367 292.7617,106.2459 Q292.7617,103.1165 294.0815,101.4647 Q295.4014,99.8128 297.9082,99.8128 Q298.6138,99.8128 299.2612,99.9622 Q299.9087,100.1116 300.4731,100.4105 L300.4731,103.1331 Q299.8423,102.5521 299.2488,102.2823 Q298.6553,102.0125 298.0244,102.0125 Q296.6797,102.0125 295.9949,103.0792 Q295.3101,104.1458 295.3101,106.2459 Q295.3101,108.3377 295.9949,109.4044 Q296.6797,110.471 298.0244,110.471 Q298.6553,110.471 299.2488,110.2012 Q299.8423,109.9315 300.4731,109.3504 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="312" y="111.221">AuthenticationServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="284" x2="461" y1="121.93" y2="121.93"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="284" x2="461" y1="129.93" y2="129.93"/>
+            <polygon fill="#FFFF44" points="294,138.6741,298,142.6741,294,146.6741,290,142.6741" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="303" y="147.4652">doGet(): void</text>
+            <polygon fill="#FFFF44" points="294,155.1624,298,159.1624,294,163.1624,290,159.1624" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="303" y="163.9534">doPost(): void</text>
+        </g>
+        <!--class Authentication-->
+        <g id="elem_Authentication">
+            <rect codeLine="18" fill="#F1F1F1" height="80.9766" id="Authentication" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="263" x="241" y="412.79"/>
+            <ellipse cx="317.75" cy="428.79" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M320.2231,434.9331 Q319.6421,435.2319 319.0029,435.3813 Q318.3638,435.5307 317.6582,435.5307 Q315.1514,435.5307 313.8315,433.8789 Q312.5117,432.227 312.5117,429.1059 Q312.5117,425.9765 313.8315,424.3247 Q315.1514,422.6728 317.6582,422.6728 Q318.3638,422.6728 319.0112,422.8222 Q319.6587,422.9716 320.2231,423.2705 L320.2231,425.9931 Q319.5923,425.4121 318.9988,425.1423 Q318.4053,424.8725 317.7744,424.8725 Q316.4297,424.8725 315.7449,425.9392 Q315.0601,427.0058 315.0601,429.1059 Q315.0601,431.1977 315.7449,432.2644 Q316.4297,433.331 317.7744,433.331 Q318.4053,433.331 318.9988,433.0612 Q319.5923,432.7915 320.2231,432.2104 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="338.25" y="434.081">Authentication</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="242" x2="503" y1="444.79" y2="444.79"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="242" x2="503" y1="452.79" y2="452.79"/>
+            <ellipse cx="252" cy="466.5341" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="261" y="470.3252">login(account: Account): boolean</text>
+            <ellipse cx="252" cy="483.0224" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="261" y="486.8134">logout(account: Account): boolean</text>
+        </g>
+        <!--class AccountRegistrationServlet-->
+        <g id="elem_AccountRegistrationServlet">
+            <rect codeLine="25" fill="#F1F1F1" height="80.9766" id="AccountRegistrationServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="263" x="590" y="89.44"/>
+            <ellipse cx="625.7" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M628.1731,111.5831 Q627.5921,111.8819 626.9529,112.0313 Q626.3138,112.1807 625.6082,112.1807 Q623.1014,112.1807 621.7815,110.5289 Q620.4617,108.877 620.4617,105.7559 Q620.4617,102.6265 621.7815,100.9747 Q623.1014,99.3228 625.6082,99.3228 Q626.3138,99.3228 626.9612,99.4722 Q627.6087,99.6216 628.1731,99.9205 L628.1731,102.6431 Q627.5423,102.0621 626.9488,101.7923 Q626.3553,101.5225 625.7244,101.5225 Q624.3797,101.5225 623.6949,102.5892 Q623.0101,103.6558 623.0101,105.7559 Q623.0101,107.8477 623.6949,108.9144 Q624.3797,109.981 625.7244,109.981 Q626.3553,109.981 626.9488,109.7112 Q627.5423,109.4415 628.1731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="644.3" y="110.731">AccountRegistrationServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="591" x2="852" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="591" x2="852" y1="129.44" y2="129.44"/>
+            <ellipse cx="601" cy="143.1841" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="610" y="146.9752">login(account: Account): boolean</text>
+            <ellipse cx="601" cy="159.6724" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="610" y="163.4634">logout(account: Account): boolean</text>
+        </g>
+        <!--class AccountRegistration-->
+        <g id="elem_AccountRegistration">
+            <rect codeLine="30" fill="#F1F1F1" height="80.9766" id="AccountRegistration" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="316" x="563.5" y="412.3"/>
+            <ellipse cx="647.75" cy="428.3" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M650.2231,434.4431 Q649.6421,434.7419 649.0029,434.8913 Q648.3638,435.0407 647.6582,435.0407 Q645.1514,435.0407 643.8315,433.3889 Q642.5117,431.737 642.5117,428.6159 Q642.5117,425.4865 643.8315,423.8347 Q645.1514,422.1828 647.6582,422.1828 Q648.3638,422.1828 649.0112,422.3322 Q649.6587,422.4816 650.2231,422.7805 L650.2231,425.5031 Q649.5923,424.9221 648.9988,424.6523 Q648.4053,424.3825 647.7744,424.3825 Q646.4297,424.3825 645.7449,425.4492 Q645.0601,426.5158 645.0601,428.6159 Q645.0601,430.7077 645.7449,431.7744 Q646.4297,432.841 647.7744,432.841 Q648.4053,432.841 648.9988,432.5712 Q649.5923,432.3015 650.2231,431.7204 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="668.25" y="433.591">AccountRegistration</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="564.5" x2="878.5" y1="444.3" y2="444.3"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="564.5" x2="878.5" y1="452.3" y2="452.3"/>
+            <ellipse cx="574.5" cy="466.0441" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="583.5" y="469.8352">createAccount(account: Account): boolean</text>
+            <ellipse cx="574.5" cy="482.5324" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="220" x="583.5" y="486.3234">searchAccount(): List&lt;Account&gt;</text>
+        </g>
+        <!--class GeneralServlet-->
+        <g id="elem_GeneralServlet">
+            <rect codeLine="37" fill="#F1F1F1" height="80.9766" id="GeneralServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="131" x="888" y="89.44"/>
+            <ellipse cx="903" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M905.4731,111.5831 Q904.8921,111.8819 904.2529,112.0313 Q903.6138,112.1807 902.9082,112.1807 Q900.4014,112.1807 899.0815,110.5289 Q897.7617,108.877 897.7617,105.7559 Q897.7617,102.6265 899.0815,100.9747 Q900.4014,99.3228 902.9082,99.3228 Q903.6138,99.3228 904.2612,99.4722 Q904.9087,99.6216 905.4731,99.9205 L905.4731,102.6431 Q904.8423,102.0621 904.2488,101.7923 Q903.6553,101.5225 903.0244,101.5225 Q901.6797,101.5225 900.9949,102.5892 Q900.3101,103.6558 900.3101,105.7559 Q900.3101,107.8477 900.9949,108.9144 Q901.6797,109.981 903.0244,109.981 Q903.6553,109.981 904.2488,109.7112 Q904.8423,109.4415 905.4731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="917" y="110.731">GeneralServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="889" x2="1018" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="889" x2="1018" y1="129.44" y2="129.44"/>
+            <polygon fill="#FFFF44" points="899,138.1841,903,142.1841,899,146.1841,895,142.1841" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="908" y="146.9752">doGet(): void</text>
+            <polygon fill="#FFFF44" points="899,154.6724,903,158.6724,899,162.6724,895,158.6724" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="908" y="163.4634">doPost(): void</text>
+        </g>
+        <!--class CartServlet-->
+        <g id="elem_CartServlet">
+            <rect codeLine="42" fill="#F1F1F1" height="80.9766" id="CartServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="120" x="1077.5" y="89.93"/>
+            <ellipse cx="1098.35" cy="105.93" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1100.8231,112.0731 Q1100.2421,112.3719 1099.6029,112.5213 Q1098.9638,112.6707 1098.2582,112.6707 Q1095.7514,112.6707 1094.4315,111.0189 Q1093.1117,109.367 1093.1117,106.2459 Q1093.1117,103.1165 1094.4315,101.4647 Q1095.7514,99.8128 1098.2582,99.8128 Q1098.9638,99.8128 1099.6112,99.9622 Q1100.2587,100.1116 1100.8231,100.4105 L1100.8231,103.1331 Q1100.1923,102.5521 1099.5988,102.2823 Q1099.0053,102.0125 1098.3744,102.0125 Q1097.0297,102.0125 1096.3449,103.0792 Q1095.6601,104.1458 1095.6601,106.2459 Q1095.6601,108.3377 1096.3449,109.4044 Q1097.0297,110.471 1098.3744,110.471 Q1099.0053,110.471 1099.5988,110.2012 Q1100.1923,109.9315 1100.8231,109.3504 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="1113.65" y="111.221">CartServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1078.5" x2="1196.5" y1="121.93" y2="121.93"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1078.5" x2="1196.5" y1="129.93" y2="129.93"/>
+            <polygon fill="#FFFF44" points="1088.5,138.6741,1092.5,142.6741,1088.5,146.6741,1084.5,142.6741" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1097.5" y="147.4652">doGet(): void</text>
+            <polygon fill="#FFFF44" points="1088.5,155.1624,1092.5,159.1624,1088.5,163.1624,1084.5,159.1624" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1097.5" y="163.9534">doPost(): void</text>
+        </g>
+        <!--class Cart-->
+        <g id="elem_Cart">
+            <rect codeLine="47" fill="#F1F1F1" height="97.4648" id="Cart" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="242" x="1016.5" y="404.29"/>
+            <ellipse cx="1118.75" cy="420.29" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1121.2231,426.4331 Q1120.6421,426.7319 1120.0029,426.8813 Q1119.3638,427.0307 1118.6582,427.0307 Q1116.1514,427.0307 1114.8315,425.3789 Q1113.5117,423.727 1113.5117,420.6059 Q1113.5117,417.4765 1114.8315,415.8247 Q1116.1514,414.1728 1118.6582,414.1728 Q1119.3638,414.1728 1120.0112,414.3222 Q1120.6587,414.4716 1121.2231,414.7705 L1121.2231,417.4931 Q1120.5923,416.9121 1119.9988,416.6423 Q1119.4053,416.3725 1118.7744,416.3725 Q1117.4297,416.3725 1116.7449,417.4392 Q1116.0601,418.5058 1116.0601,420.6059 Q1116.0601,422.6977 1116.7449,423.7644 Q1117.4297,424.831 1118.7744,424.831 Q1119.4053,424.831 1119.9988,424.5612 Q1120.5923,424.2915 1121.2231,423.7104 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="1139.25" y="425.581">Cart</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1017.5" x2="1257.5" y1="436.29" y2="436.29"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1017.5" x2="1257.5" y1="444.29" y2="444.29"/>
+            <ellipse cx="1027.5" cy="458.0341" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="1036.5" y="461.8252">getCart(account: Account): void</text>
+            <ellipse cx="1027.5" cy="474.5224" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="1036.5" y="478.3134">updateCart(cart: Cart): void</text>
+            <ellipse cx="1027.5" cy="491.0107" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="1036.5" y="494.8017">deleteCart(cart: Cart): void</text>
+        </g>
+        <!--class OrderServlet-->
+        <g id="elem_OrderServlet">
+            <rect codeLine="55" fill="#F1F1F1" height="80.9766" id="OrderServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="120" x="1384.5" y="89.44"/>
+            <ellipse cx="1400.4" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1402.8731,111.5831 Q1402.2921,111.8819 1401.6529,112.0313 Q1401.0138,112.1807 1400.3082,112.1807 Q1397.8014,112.1807 1396.4815,110.5289 Q1395.1617,108.877 1395.1617,105.7559 Q1395.1617,102.6265 1396.4815,100.9747 Q1397.8014,99.3228 1400.3082,99.3228 Q1401.0138,99.3228 1401.6612,99.4722 Q1402.3087,99.6216 1402.8731,99.9205 L1402.8731,102.6431 Q1402.2423,102.0621 1401.6488,101.7923 Q1401.0553,101.5225 1400.4244,101.5225 Q1399.0797,101.5225 1398.3949,102.5892 Q1397.7101,103.6558 1397.7101,105.7559 Q1397.7101,107.8477 1398.3949,108.9144 Q1399.0797,109.981 1400.4244,109.981 Q1401.0553,109.981 1401.6488,109.7112 Q1402.2423,109.4415 1402.8731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="1414.6" y="110.731">OrderServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1385.5" x2="1503.5" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1385.5" x2="1503.5" y1="129.44" y2="129.44"/>
+            <polygon fill="#FFFF44" points="1395.5,138.1841,1399.5,142.1841,1395.5,146.1841,1391.5,142.1841" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1404.5" y="146.9752">doGet(): void</text>
+            <polygon fill="#FFFF44" points="1395.5,154.6724,1399.5,158.6724,1395.5,162.6724,1391.5,158.6724" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1404.5" y="163.4634">doPost(): void</text>
+        </g>
+        <!--class OrderManagement-->
+        <g id="elem_OrderManagement">
+            <rect codeLine="60" fill="#F1F1F1" height="113.9531" id="OrderManagement" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="253" x="1318" y="395.81"/>
+            <ellipse cx="1375.75" cy="411.81" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1378.2231,417.9531 Q1377.6421,418.2519 1377.0029,418.4013 Q1376.3638,418.5507 1375.6582,418.5507 Q1373.1514,418.5507 1371.8315,416.8989 Q1370.5117,415.247 1370.5117,412.1259 Q1370.5117,408.9965 1371.8315,407.3447 Q1373.1514,405.6928 1375.6582,405.6928 Q1376.3638,405.6928 1377.0112,405.8422 Q1377.6587,405.9916 1378.2231,406.2905 L1378.2231,409.0131 Q1377.5923,408.4321 1376.9988,408.1623 Q1376.4053,407.8925 1375.7744,407.8925 Q1374.4297,407.8925 1373.7449,408.9592 Q1373.0601,410.0258 1373.0601,412.1259 Q1373.0601,414.2177 1373.7449,415.2844 Q1374.4297,416.351 1375.7744,416.351 Q1376.4053,416.351 1376.9988,416.0812 Q1377.5923,415.8115 1378.2231,415.2304 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1396.25" y="417.101">OrderManagement</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1319" x2="1570" y1="427.81" y2="427.81"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1326" y="438.5541"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="1338" y="445.3452">accountId: int</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1319" x2="1570" y1="452.2983" y2="452.2983"/>
+            <rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1326" y="463.0424"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="1338" y="469.8334">orderServlet(account: Account)</text>
+            <ellipse cx="1329" cy="482.5307" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="1338" y="486.3217">getOrder(account: Account): void</text>
+            <ellipse cx="1329" cy="499.019" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="1338" y="502.81">removeOrder(): void</text>
+        </g>
+        <!--class AdministratorServlet-->
+        <g id="elem_AdministratorServlet">
+            <rect codeLine="69" fill="#F1F1F1" height="80.9766" id="AdministratorServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="173" x="1558" y="89.44"/>
+            <ellipse cx="1573" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1575.4731,111.5831 Q1574.8921,111.8819 1574.2529,112.0313 Q1573.6138,112.1807 1572.9082,112.1807 Q1570.4014,112.1807 1569.0815,110.5289 Q1567.7617,108.877 1567.7617,105.7559 Q1567.7617,102.6265 1569.0815,100.9747 Q1570.4014,99.3228 1572.9082,99.3228 Q1573.6138,99.3228 1574.2612,99.4722 Q1574.9087,99.6216 1575.4731,99.9205 L1575.4731,102.6431 Q1574.8423,102.0621 1574.2488,101.7923 Q1573.6553,101.5225 1573.0244,101.5225 Q1571.6797,101.5225 1570.9949,102.5892 Q1570.3101,103.6558 1570.3101,105.7559 Q1570.3101,107.8477 1570.9949,108.9144 Q1571.6797,109.981 1573.0244,109.981 Q1573.6553,109.981 1574.2488,109.7112 Q1574.8423,109.4415 1575.4731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="1587" y="110.731">AdministratorServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1559" x2="1730" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1559" x2="1730" y1="129.44" y2="129.44"/>
+            <polygon fill="#FFFF44" points="1569,138.1841,1573,142.1841,1569,146.1841,1565,142.1841" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1578" y="146.9752">doGet(): void</text>
+            <polygon fill="#FFFF44" points="1569,154.6724,1573,158.6724,1569,162.6724,1565,158.6724" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1578" y="163.4634">doPost(): void</text>
+        </g>
+        <!--class ProductServlet-->
+        <g id="elem_ProductServlet">
+            <rect codeLine="74" fill="#F1F1F1" height="80.9766" id="ProductServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="131" x="1784" y="89.44"/>
+            <ellipse cx="1799" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1801.4731,111.5831 Q1800.8921,111.8819 1800.2529,112.0313 Q1799.6138,112.1807 1798.9082,112.1807 Q1796.4014,112.1807 1795.0815,110.5289 Q1793.7617,108.877 1793.7617,105.7559 Q1793.7617,102.6265 1795.0815,100.9747 Q1796.4014,99.3228 1798.9082,99.3228 Q1799.6138,99.3228 1800.2612,99.4722 Q1800.9087,99.6216 1801.4731,99.9205 L1801.4731,102.6431 Q1800.8423,102.0621 1800.2488,101.7923 Q1799.6553,101.5225 1799.0244,101.5225 Q1797.6797,101.5225 1796.9949,102.5892 Q1796.3101,103.6558 1796.3101,105.7559 Q1796.3101,107.8477 1796.9949,108.9144 Q1797.6797,109.981 1799.0244,109.981 Q1799.6553,109.981 1800.2488,109.7112 Q1800.8423,109.4415 1801.4731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="1813" y="110.731">ProductServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1785" x2="1914" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1785" x2="1914" y1="129.44" y2="129.44"/>
+            <polygon fill="#FFFF44" points="1795,138.1841,1799,142.1841,1795,146.1841,1791,142.1841" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1804" y="146.9752">doGet(): void</text>
+            <polygon fill="#FFFF44" points="1795,154.6724,1799,158.6724,1795,162.6724,1791,158.6724" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1804" y="163.4634">doPost(): void</text>
+        </g>
+        <!--class ProductRegister-->
+        <g id="elem_ProductRegister">
+            <rect codeLine="79" fill="#F1F1F1" height="113.9531" id="ProductRegister" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="487" x="1606" y="395.81"/>
+            <ellipse cx="1790.75" cy="411.81" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1793.2231,417.9531 Q1792.6421,418.2519 1792.0029,418.4013 Q1791.3638,418.5507 1790.6582,418.5507 Q1788.1514,418.5507 1786.8315,416.8989 Q1785.5117,415.247 1785.5117,412.1259 Q1785.5117,408.9965 1786.8315,407.3447 Q1788.1514,405.6928 1790.6582,405.6928 Q1791.3638,405.6928 1792.0112,405.8422 Q1792.6587,405.9916 1793.2231,406.2905 L1793.2231,409.0131 Q1792.5923,408.4321 1791.9988,408.1623 Q1791.4053,407.8925 1790.7744,407.8925 Q1789.4297,407.8925 1788.7449,408.9592 Q1788.0601,410.0258 1788.0601,412.1259 Q1788.0601,414.2177 1788.7449,415.2844 Q1789.4297,416.351 1790.7744,416.351 Q1791.4053,416.351 1791.9988,416.0812 Q1792.5923,415.8115 1793.2231,415.2304 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="1811.25" y="417.101">ProductRegister</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1607" x2="2092" y1="427.81" y2="427.81"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1607" x2="2092" y1="435.81" y2="435.81"/>
+            <ellipse cx="1617" cy="449.5541" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1626" y="453.3452">selectAll(): void</text>
+            <ellipse cx="1617" cy="466.0424" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="1626" y="469.8334">createProduct(product: Product): boolean</text>
+            <ellipse cx="1617" cy="482.5307" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="1626" y="486.3217">removeProduct(product: Product): boolean</text>
+            <ellipse cx="1617" cy="499.019" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="461" x="1626" y="502.81">updateProduct(oldProduct: Product, newProduct: Product): boolean</text>
+        </g>
+        <!--class AccountManagementServlet-->
+        <g id="elem_AccountManagementServlet">
+            <rect codeLine="88" fill="#F1F1F1" height="80.9766" id="AccountManagementServlet" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="223" x="2179" y="89.44"/>
+            <ellipse cx="2194" cy="105.44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2196.4731,111.5831 Q2195.8921,111.8819 2195.2529,112.0313 Q2194.6138,112.1807 2193.9082,112.1807 Q2191.4014,112.1807 2190.0815,110.5289 Q2188.7617,108.877 2188.7617,105.7559 Q2188.7617,102.6265 2190.0815,100.9747 Q2191.4014,99.3228 2193.9082,99.3228 Q2194.6138,99.3228 2195.2612,99.4722 Q2195.9087,99.6216 2196.4731,99.9205 L2196.4731,102.6431 Q2195.8423,102.0621 2195.2488,101.7923 Q2194.6553,101.5225 2194.0244,101.5225 Q2192.6797,101.5225 2191.9949,102.5892 Q2191.3101,103.6558 2191.3101,105.7559 Q2191.3101,107.8477 2191.9949,108.9144 Q2192.6797,109.981 2194.0244,109.981 Q2194.6553,109.981 2195.2488,109.7112 Q2195.8423,109.4415 2196.4731,108.8604 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="2208" y="110.731">AccountManagementServlet</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2180" x2="2401" y1="121.44" y2="121.44"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2180" x2="2401" y1="129.44" y2="129.44"/>
+            <polygon fill="#FFFF44" points="2190,138.1841,2194,142.1841,2190,146.1841,2186,142.1841" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="2199" y="146.9752">doGet(): void</text>
+            <polygon fill="#FFFF44" points="2190,154.6724,2194,158.6724,2190,162.6724,2186,158.6724" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="2199" y="163.4634">doPost(): void</text>
+        </g>
+        <!--class AccountManagement-->
+        <g id="elem_AccountManagement">
+            <rect codeLine="93" fill="#F1F1F1" height="113.9531" id="AccountManagement" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="325" x="2128" y="395.81"/>
+            <ellipse cx="2213.75" cy="411.81" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2216.2231,417.9531 Q2215.6421,418.2519 2215.0029,418.4013 Q2214.3638,418.5507 2213.6582,418.5507 Q2211.1514,418.5507 2209.8315,416.8989 Q2208.5117,415.247 2208.5117,412.1259 Q2208.5117,408.9965 2209.8315,407.3447 Q2211.1514,405.6928 2213.6582,405.6928 Q2214.3638,405.6928 2215.0112,405.8422 Q2215.6587,405.9916 2216.2231,406.2905 L2216.2231,409.0131 Q2215.5923,408.4321 2214.9988,408.1623 Q2214.4053,407.8925 2213.7744,407.8925 Q2212.4297,407.8925 2211.7449,408.9592 Q2211.0601,410.0258 2211.0601,412.1259 Q2211.0601,414.2177 2211.7449,415.2844 Q2212.4297,416.351 2213.7744,416.351 Q2214.4053,416.351 2214.9988,416.0812 Q2215.5923,415.8115 2216.2231,415.2304 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="2234.25" y="417.101">AccountManagement</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2129" x2="2452" y1="427.81" y2="427.81"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2129" x2="2452" y1="435.81" y2="435.81"/>
+            <ellipse cx="2139" cy="449.5541" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="2148" y="453.3452">searchAll(): void</text>
+            <ellipse cx="2139" cy="466.0424" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="2148" y="469.8334">search(account: Account): List&lt;Account&gt;</text>
+            <ellipse cx="2139" cy="482.5307" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="296" x="2148" y="486.3217">updateAccount(account: Account): boolean</text>
+            <ellipse cx="2139" cy="499.019" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="2148" y="502.81">removeAccount(account: Account): boolean</text>
+        </g>
+        <!--class DAO-->
+        <g id="elem_DAO">
+            <rect codeLine="102" fill="#F1F1F1" height="97.4648" id="DAO" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="2978.5" y="81.2"/>
+            <ellipse cx="3028.75" cy="97.2" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M3025.1777,93.4651 L3025.1777,91.3069 L3032.5571,91.3069 L3032.5571,93.4651 L3030.0918,93.4651 L3030.0918,101.5418 L3032.5571,101.5418 L3032.5571,103.7 L3025.1777,103.7 L3025.1777,101.5418 L3027.6431,101.5418 L3027.6431,93.4651 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="31" x="3049.25" y="102.491">DAO</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2979.5" x2="3117.5" y1="113.2" y2="113.2"/>
+            <ellipse cx="2989.5" cy="126.9441" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="2998.5" y="130.7352">JDBC_URL: String</text>
+            <ellipse cx="2989.5" cy="143.4324" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="2998.5" y="147.2234">DB_USER: String</text>
+            <ellipse cx="2989.5" cy="159.9207" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="2998.5" y="163.7117">DB_PASS: String</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2979.5" x2="3117.5" y1="170.6648" y2="170.6648"/>
+        </g>
+        <!--class AccountDAO-->
+        <g id="elem_AccountDAO">
+            <rect codeLine="108" fill="#F1F1F1" height="130.4414" id="AccountDAO" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="308" x="2488.5" y="387.57"/>
+            <ellipse cx="2594.75" cy="403.57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2597.2231,409.7131 Q2596.6421,410.0119 2596.0029,410.1613 Q2595.3638,410.3107 2594.6582,410.3107 Q2592.1514,410.3107 2590.8315,408.6589 Q2589.5117,407.007 2589.5117,403.8859 Q2589.5117,400.7565 2590.8315,399.1047 Q2592.1514,397.4528 2594.6582,397.4528 Q2595.3638,397.4528 2596.0112,397.6022 Q2596.6587,397.7516 2597.2231,398.0505 L2597.2231,400.7731 Q2596.5923,400.1921 2595.9988,399.9223 Q2595.4053,399.6525 2594.7744,399.6525 Q2593.4297,399.6525 2592.7449,400.7192 Q2592.0601,401.7858 2592.0601,403.8859 Q2592.0601,405.9777 2592.7449,407.0444 Q2593.4297,408.111 2594.7744,408.111 Q2595.4053,408.111 2595.9988,407.8412 Q2596.5923,407.5715 2597.2231,406.9904 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="2615.25" y="408.861">AccountDAO</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2489.5" x2="2795.5" y1="419.57" y2="419.57"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2489.5" x2="2795.5" y1="427.57" y2="427.57"/>
+            <ellipse cx="2499.5" cy="441.3141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="2508.5" y="445.1052">searchAll(): List&lt;Account&gt;</text>
+            <ellipse cx="2499.5" cy="457.8024" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="2508.5" y="461.5934">search(account: Account): List&lt;Account&gt;</text>
+            <ellipse cx="2499.5" cy="474.2907" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="2508.5" y="478.0817">create(account: Account): boolean</text>
+            <ellipse cx="2499.5" cy="490.779" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="243" x="2508.5" y="494.57">remove(account: Account): boolean</text>
+            <ellipse cx="2499.5" cy="507.2673" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="2508.5" y="511.0583">update(account: Account): boolean</text>
+        </g>
+        <!--class ProductDAO-->
+        <g id="elem_ProductDAO">
+            <rect codeLine="116" fill="#F1F1F1" height="130.4414" id="ProductDAO" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="434" x="2831.5" y="387.57"/>
+            <ellipse cx="3002.25" cy="403.57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M3004.7231,409.7131 Q3004.1421,410.0119 3003.5029,410.1613 Q3002.8638,410.3107 3002.1582,410.3107 Q2999.6514,410.3107 2998.3315,408.6589 Q2997.0117,407.007 2997.0117,403.8859 Q2997.0117,400.7565 2998.3315,399.1047 Q2999.6514,397.4528 3002.1582,397.4528 Q3002.8638,397.4528 3003.5112,397.6022 Q3004.1587,397.7516 3004.7231,398.0505 L3004.7231,400.7731 Q3004.0923,400.1921 3003.4988,399.9223 Q3002.9053,399.6525 3002.2744,399.6525 Q3000.9297,399.6525 3000.2449,400.7192 Q2999.5601,401.7858 2999.5601,403.8859 Q2999.5601,405.9777 3000.2449,407.0444 Q3000.9297,408.111 3002.2744,408.111 Q3002.9053,408.111 3003.4988,407.8412 Q3004.0923,407.5715 3004.7231,406.9904 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="3022.75" y="408.861">ProductDAO</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2832.5" x2="3264.5" y1="419.57" y2="419.57"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2832.5" x2="3264.5" y1="427.57" y2="427.57"/>
+            <ellipse cx="2842.5" cy="441.3141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="2851.5" y="445.1052">searchAll(): List&lt;Product&gt;</text>
+            <ellipse cx="2842.5" cy="457.8024" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="2851.5" y="461.5934">search(product: Product): List&lt;Product&gt;</text>
+            <ellipse cx="2842.5" cy="474.2907" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="2851.5" y="478.0817">create(product: Product): boolean</text>
+            <ellipse cx="2842.5" cy="490.779" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="2851.5" y="494.57">remove(product: Product): boolean</text>
+            <ellipse cx="2842.5" cy="507.2673" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="408" x="2851.5" y="511.0583">update(oldProduct: Product, newProduct: Product): boolean</text>
+        </g>
+        <!--class OrderDAO-->
+        <g id="elem_OrderDAO">
+            <rect codeLine="124" fill="#F1F1F1" height="130.4414" id="OrderDAO" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="260" x="3300.5" y="387.57"/>
+            <ellipse cx="3390.75" cy="403.57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M3393.2231,409.7131 Q3392.6421,410.0119 3392.0029,410.1613 Q3391.3638,410.3107 3390.6582,410.3107 Q3388.1514,410.3107 3386.8315,408.6589 Q3385.5117,407.007 3385.5117,403.8859 Q3385.5117,400.7565 3386.8315,399.1047 Q3388.1514,397.4528 3390.6582,397.4528 Q3391.3638,397.4528 3392.0112,397.6022 Q3392.6587,397.7516 3393.2231,398.0505 L3393.2231,400.7731 Q3392.5923,400.1921 3391.9988,399.9223 Q3391.4053,399.6525 3390.7744,399.6525 Q3389.4297,399.6525 3388.7449,400.7192 Q3388.0601,401.7858 3388.0601,403.8859 Q3388.0601,405.9777 3388.7449,407.0444 Q3389.4297,408.111 3390.7744,408.111 Q3391.4053,408.111 3391.9988,407.8412 Q3392.5923,407.5715 3393.2231,406.9904 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="3411.25" y="408.861">OrderDAO</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3301.5" x2="3559.5" y1="419.57" y2="419.57"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3301.5" x2="3559.5" y1="427.57" y2="427.57"/>
+            <ellipse cx="3311.5" cy="441.3141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="3320.5" y="445.1052">searchAll(): List&lt;Order&gt;</text>
+            <ellipse cx="3311.5" cy="457.8024" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="3320.5" y="461.5934">search(order: Order): List&lt;Order&gt;</text>
+            <ellipse cx="3311.5" cy="474.2907" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="3320.5" y="478.0817">create(order: Order): boolean</text>
+            <ellipse cx="3311.5" cy="490.779" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="3320.5" y="494.57">remove(order: Order): boolean</text>
+            <ellipse cx="3311.5" cy="507.2673" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="3320.5" y="511.0583">update(order: Order): boolean</text>
+        </g>
+        <!--class DataModel-->
+        <g id="elem_DataModel">
+            <rect codeLine="132" fill="#F1F1F1" height="245.8594" id="DataModel" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="411" x="3915" y="7"/>
+            <ellipse cx="4079.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M4082.2231,29.1431 Q4081.6421,29.4419 4081.0029,29.5913 Q4080.3638,29.7407 4079.6582,29.7407 Q4077.1514,29.7407 4075.8315,28.0889 Q4074.5117,26.437 4074.5117,23.3159 Q4074.5117,20.1865 4075.8315,18.5347 Q4077.1514,16.8828 4079.6582,16.8828 Q4080.3638,16.8828 4081.0112,17.0322 Q4081.6587,17.1816 4082.2231,17.4805 L4082.2231,20.2031 Q4081.5923,19.6221 4080.9988,19.3523 Q4080.4053,19.0825 4079.7744,19.0825 Q4078.4297,19.0825 4077.7449,20.1492 Q4077.0601,21.2158 4077.0601,23.3159 Q4077.0601,25.4077 4077.7449,26.4744 Q4078.4297,27.541 4079.7744,27.541 Q4080.4053,27.541 4080.9988,27.2712 Q4081.5923,27.0015 4082.2231,26.4204 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="4100.25" y="28.291">DataModel</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3916" x2="4325" y1="39" y2="39"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3923" y="49.7441"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="3935" y="56.5352">id: int</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3923" y="66.2324"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="3935" y="73.0234">additionalDate: ZonedDateTime</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3923" y="82.7207"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="3935" y="89.5117">name: String</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3923" y="99.209"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="3935" y="106">imagePass: String</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3916" x2="4325" y1="112.9531" y2="112.9531"/>
+            <ellipse cx="3926" cy="126.6973" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="3935" y="130.4883">getId(): int</text>
+            <ellipse cx="3926" cy="143.1855" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="3935" y="146.9766">setId(id: int): void</text>
+            <ellipse cx="3926" cy="159.6738" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="3935" y="163.4648">getAdditionalDate(): ZonedDateTime</text>
+            <ellipse cx="3926" cy="176.1621" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="385" x="3935" y="179.9531">setAdditionalDate(additionalDate: ZonedDateTime): void</text>
+            <ellipse cx="3926" cy="192.6504" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="3935" y="196.4414">getName(): String</text>
+            <ellipse cx="3926" cy="209.1387" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="3935" y="212.9297">setName(name: String): void</text>
+            <ellipse cx="3926" cy="225.627" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="3935" y="229.418">getImagePath(): String</text>
+            <ellipse cx="3926" cy="242.1152" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="3935" y="245.9063">setImagePath(imagePath: String): void</text>
+        </g>
+        <!--class Account-->
+        <g id="elem_Account">
+            <rect codeLine="147" fill="#F1F1F1" height="146.9297" id="Account" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="273" x="3596" y="379.33"/>
+            <ellipse cx="3700.25" cy="395.33" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M3702.7231,401.4731 Q3702.1421,401.7719 3701.5029,401.9213 Q3700.8638,402.0707 3700.1582,402.0707 Q3697.6514,402.0707 3696.3315,400.4189 Q3695.0117,398.767 3695.0117,395.6459 Q3695.0117,392.5165 3696.3315,390.8647 Q3697.6514,389.2128 3700.1582,389.2128 Q3700.8638,389.2128 3701.5112,389.3622 Q3702.1587,389.5116 3702.7231,389.8105 L3702.7231,392.5331 Q3702.0923,391.9521 3701.4988,391.6823 Q3700.9053,391.4125 3700.2744,391.4125 Q3698.9297,391.4125 3698.2449,392.4792 Q3697.5601,393.5458 3697.5601,395.6459 Q3697.5601,397.7377 3698.2449,398.8044 Q3698.9297,399.871 3700.2744,399.871 Q3700.9053,399.871 3701.4988,399.6012 Q3702.0923,399.3315 3702.7231,398.7504 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="3720.75" y="400.621">Account</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3597" x2="3868" y1="411.33" y2="411.33"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3604" y="422.0741"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="3616" y="428.8652">password: String</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3604" y="438.5624"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="3616" y="445.3534">isAdmin: boolean</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3597" x2="3868" y1="452.3066" y2="452.3066"/>
+            <ellipse cx="3607" cy="466.0507" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="3616" y="469.8417">setPassword(password: String): void</text>
+            <ellipse cx="3607" cy="482.539" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="243" x="3616" y="486.33">setIsAdmin(isAdmin: boolean): void</text>
+            <ellipse cx="3607" cy="499.0273" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="3616" y="502.8183">getPassword(): String</text>
+            <ellipse cx="3607" cy="515.5155" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="3616" y="519.3066">getIsAdmin(): boolean</text>
+        </g>
+        <!--class Product-->
+        <g id="elem_Product">
+            <rect codeLine="156" fill="#F1F1F1" height="245.8594" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="433" x="3904" y="329.86"/>
+            <ellipse cx="4089.75" cy="345.86" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M4092.2231,352.0031 Q4091.6421,352.3019 4091.0029,352.4513 Q4090.3638,352.6007 4089.6582,352.6007 Q4087.1514,352.6007 4085.8315,350.9489 Q4084.5117,349.297 4084.5117,346.1759 Q4084.5117,343.0465 4085.8315,341.3947 Q4087.1514,339.7428 4089.6582,339.7428 Q4090.3638,339.7428 4091.0112,339.8922 Q4091.6587,340.0416 4092.2231,340.3405 L4092.2231,343.0631 Q4091.5923,342.4821 4090.9988,342.2123 Q4090.4053,341.9425 4089.7744,341.9425 Q4088.4297,341.9425 4087.7449,343.0092 Q4087.0601,344.0758 4087.0601,346.1759 Q4087.0601,348.2677 4087.7449,349.3344 Q4088.4297,350.401 4089.7744,350.401 Q4090.4053,350.401 4090.9988,350.1312 Q4091.5923,349.8615 4092.2231,349.2804 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="4110.25" y="351.151">Product</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3905" x2="4336" y1="361.86" y2="361.86"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3912" y="372.6041"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="3924" y="379.3952">explanation: String</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3912" y="389.0924"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="3924" y="395.8834">price: int</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3912" y="405.5807"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="3924" y="412.3717">stock: int</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3912" y="422.069"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235" x="3924" y="428.86">subImagePaths: ArrayList&lt;String&gt;</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3905" x2="4336" y1="435.8131" y2="435.8131"/>
+            <ellipse cx="3915" cy="449.5573" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="3924" y="453.3483">getExplanation(): String</text>
+            <ellipse cx="3915" cy="466.0455" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="3924" y="469.8366">setExplanation(explanation: String): void</text>
+            <ellipse cx="3915" cy="482.5338" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="3924" y="486.3248">getPrice(): int</text>
+            <ellipse cx="3915" cy="499.0221" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="3924" y="502.8131">setPrice(price: int): void</text>
+            <ellipse cx="3915" cy="515.5104" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="3924" y="519.3014">getStock(): int</text>
+            <ellipse cx="3915" cy="531.9987" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="3924" y="535.7897">setStock(stock: int): void</text>
+            <ellipse cx="3915" cy="548.487" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="3924" y="552.278">getSubImagePaths(): ArrayList&lt;String&gt;</text>
+            <ellipse cx="3915" cy="564.9752" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="407" x="3924" y="568.7663">setSubImagePaths(subImagePaths: ArrayList&lt;String&gt;): void</text>
+        </g>
+        <!--class Order-->
+        <g id="elem_Order">
+            <rect codeLine="171" fill="#F1F1F1" height="196.3945" id="Order" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="255" x="4372" y="354.59"/>
+            <ellipse cx="4475.25" cy="370.59" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M4477.7231,376.7331 Q4477.1421,377.0319 4476.5029,377.1813 Q4475.8638,377.3307 4475.1582,377.3307 Q4472.6514,377.3307 4471.3315,375.6789 Q4470.0117,374.027 4470.0117,370.9059 Q4470.0117,367.7765 4471.3315,366.1247 Q4472.6514,364.4728 4475.1582,364.4728 Q4475.8638,364.4728 4476.5112,364.6222 Q4477.1587,364.7716 4477.7231,365.0705 L4477.7231,367.7931 Q4477.0923,367.2121 4476.4988,366.9423 Q4475.9053,366.6725 4475.2744,366.6725 Q4473.9297,366.6725 4473.2449,367.7392 Q4472.5601,368.8058 4472.5601,370.9059 Q4472.5601,372.9977 4473.2449,374.0644 Q4473.9297,375.131 4475.2744,375.131 Q4475.9053,375.131 4476.4988,374.8612 Q4477.0923,374.5915 4477.7231,374.0104 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="4495.75" y="375.881">Order</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="4373" x2="4626" y1="386.59" y2="386.59"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="4380" y="397.3341"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="4392" y="404.1252">accountId: int</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="4380" y="413.8224"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="4392" y="420.6134">productId: int</text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="4380" y="430.3107"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="4392" y="437.1017">pieces: int</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="4373" x2="4626" y1="444.0548" y2="444.0548"/>
+            <ellipse cx="4383" cy="457.799" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="4392" y="461.59">getAccountId(): int</text>
+            <ellipse cx="4383" cy="474.2873" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="4392" y="478.0783">setAccountId(accountId: int): void</text>
+            <ellipse cx="4383" cy="490.7755" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="4392" y="494.5666">getProductId(): int</text>
+            <ellipse cx="4383" cy="507.2638" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="4392" y="511.0548">setProductId(productId: int): void</text>
+            <ellipse cx="4383" cy="523.7521" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="4392" y="527.5431">getPieces(): int</text>
+            <ellipse cx="4383" cy="540.2404" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="4392" y="544.0314">setPieces(pieces: int): void</text>
+        </g>
+        <!--link RankingServlet to Ranking-->
+        <g id="link_RankingServlet_Ranking">
+            <path codeLine="11" d="M82.5,169.63 C82.5,234.14 82.5,362.33 82.5,421.08 " fill="none" id="RankingServlet-Ranking" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="83.5" y="296.4284">create</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="71.45" y="191.4969">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="73.625" y="410.0517">1</text>
+        </g>
+        <!--link AuthenticationServlet to Authentication-->
+        <g id="link_AuthenticationServlet_Authentication">
+            <path codeLine="23" d="M372.5,169.63 C372.5,231.3 372.5,351.19 372.5,412.95 " fill="none" id="AuthenticationServlet-Authentication" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="373.5" y="296.4284">create</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="361.45" y="191.4969">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="363.7875" y="402.0266">1</text>
+        </g>
+        <!--link AccountRegistrationServlet to AccountRegistration-->
+        <g id="link_AccountRegistrationServlet_AccountRegistration">
+            <path codeLine="35" d="M721.5,170.6 C721.5,232.21 721.5,350.25 721.5,411.96 " fill="none" id="AccountRegistrationServlet-AccountRegistration" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="722.5" y="296.4284">create</text>
+        </g>
+        <!--link CartServlet to Cart-->
+        <g id="link_CartServlet_Cart">
+            <path codeLine="53" d="M1137.5,169.63 C1137.5,228.55 1137.5,340.62 1137.5,404.35 " fill="none" id="CartServlet-Cart" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1138.5" y="296.4284">create</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1126.45" y="191.4969">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1128.9125" y="393.6908">1</text>
+        </g>
+        <!--link OrderServlet to OrderManagement-->
+        <g id="link_OrderServlet_OrderManagement">
+            <path codeLine="67" d="M1444.5,170.6 C1444.5,227.1 1444.5,331.04 1444.5,395.5 " fill="none" id="OrderServlet-OrderManagement" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="1445.5" y="296.4284">creates</text>
+        </g>
+        <!--link ProductServlet to ProductRegister-->
+        <g id="link_ProductServlet_ProductRegister">
+            <path codeLine="86" d="M1849.5,170.6 C1849.5,227.1 1849.5,331.04 1849.5,395.5 " fill="none" id="ProductServlet-ProductRegister" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1850.5" y="296.4284">create</text>
+        </g>
+        <!--link AccountManagementServlet to AccountManagement-->
+        <g id="link_AccountManagementServlet_AccountManagement">
+            <path codeLine="100" d="M2290.5,170.6 C2290.5,227.1 2290.5,331.04 2290.5,395.5 " fill="none" id="AccountManagementServlet-AccountManagement" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="2291.5" y="296.4284">create</text>
+        </g>
+        <!--reverse link DAO to AccountDAO-->
+        <g id="link_DAO_AccountDAO">
+            <path d="M2973.5974,190.1303 C2903.4674,245.5503 2801.97,325.76 2724.07,387.33 " fill="none" id="DAO-backto-AccountDAO" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="2987.72,178.97,2969.8773,185.4228,2977.3175,194.8378,2987.72,178.97" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link DAO to ProductDAO-->
+        <g id="link_DAO_ProductDAO">
+            <path d="M3048.5,196.97 C3048.5,252.39 3048.5,325.76 3048.5,387.33 " fill="none" id="DAO-backto-ProductDAO" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="3048.5,178.97,3042.5,196.97,3054.5,196.97,3048.5,178.97" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link DAO to OrderDAO-->
+        <g id="link_DAO_OrderDAO">
+            <path d="M3119.473,190.5471 C3185.453,245.9671 3280.46,325.76 3353.75,387.33 " fill="none" id="DAO-backto-OrderDAO" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="3105.69,178.97,3115.614,195.1414,3123.332,185.9527,3105.69,178.97" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link DataModel to Account-->
+        <g id="link_DataModel_Account">
+            <path d="M3958.838,264.6203 C3907.548,307.0303 3865.55,341.76 3820.61,378.93 " fill="none" id="DataModel-backto-Account" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="none" points="3972.71,253.15,3955.0146,259.9963,3962.6614,269.2443,3972.71,253.15" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link DataModel to Product-->
+        <g id="link_DataModel_Product">
+            <path d="M4120.5,271.15 C4120.5,296.12 4120.5,304.4 4120.5,329.38 " fill="none" id="DataModel-backto-Product" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="none" points="4120.5,253.15,4114.5,271.15,4126.5,271.15,4120.5,253.15" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link DataModel to Order-->
+        <g id="link_DataModel_Order">
+            <path d="M4278.5987,264.7796 C4318.1387,298.2496 4346.72,322.45 4384.38,354.33 " fill="none" id="DataModel-backto-Order" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="none" points="4264.86,253.15,4274.7222,269.3592,4282.4752,260.2,4264.86,253.15" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--SRC=[jPVVJzim4CVV-rTOxAM8yR3NQ4BgA4ATO5JjUDaBCl6jjKZiod612V6_pucTn7PiqnyR3r2Sk-_TVNm-ftc1gmejC7kYRBK4yLo0H6yZf7u-8SAlGOvFKOQUEINTufnNrkhxQ9JR8iRxhGIvvkGTdQ4LIFDiVDexUJ5FlfoWy_FcJokKeLm0bj06c6pb6fYaEPQKCpVPBboNjPMqyr1dxoVlQWzhAFYAiZ7ESxvbCaCJ_K79F79U06O1UxwLAGSLEboGHSBBQW14YovWHIifKbJ-Km7HD8RnTUR6T8yyAi0YNxT-okv61Vbg_hzeACOfA8oXv7oEry10u2BI_i7kz_ld4Wjvh7_mvDGFGhY6pNs6jXkYgceySlKhQrGZjWHKgZ5RbPPTaDMHJPu-lpj1G1nJVIDmYnbUGQdwtMYS8rFtZ6I8CcaMkHLjI2Q0i57VbQ60aZ-3Th7oT4fKBFoCMoHLToX8IPbkENuKcxdWP9lBVo2Xpm28OPzLgXboEIcASOIABixeZ3VwRzOAnq-lfhc_d-xareyNPEwvVaOCNkPnFLMx1qvjciyXCa_xRJq6-a0iXBsPRN7isY3KkkuK3DBRVzRgtTh1hv-wGrRzp0qSZz58dMCGlt4EQ3gvCqZEqFVfjyk7-yLDXfPIgBlVB4-_FTmlhnR3rVbakUnMVUIrC2qtHHEwikB4q2TX7hW7kjwzuU_Xe7TvfnlQDFvXO8np34pWK2VT39XzPyZUm-F0gM5TI8VXQbnZi9gxAzFoQGU3oND88zhDkCKJDkuGJB74jroz9dItCNMkOKm8hT-cSA4i8KE_E0DIV_n9Ip0s39VW75ubKggPC5S1d7NtmfwHccORog5OFpDvH6QcyfyugTLQm-HSLSyZMLiyxWzLRXqjN5Xb36meSQsPvYJNIS7UYhQVV6b_EY9ubS18Q8Ctokn5zOM_PLNpCfDuHPTpupds9Q8NcvnfrR6l7aVI1JbDzOwHJOp1105utHJgrghtteEm4JG7k_yhoVCdPs7xs6s7wkw94FXFSy2rpaKWsQi-N7ARRRj0YWbaTTRnmwGVzwN5XPPrjN4X_RX7aX2oATM27tAgVAUFG8U_NYHsFVWrmzmttYA57AeWXNhkj3fnKBs96pIrXIQFr3Qs9cxI2T6cZeIYVcwLsqFz2m00]-->
+    </g>
+</svg>
