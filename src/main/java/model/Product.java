@@ -4,13 +4,14 @@
  */
 package model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  *
  * @author yuuya
  */
-public class Product extends DataModel {
+public class Product extends DataModel implements Serializable{
     private String explanation;
     private int price;
     private int stock;

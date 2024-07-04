@@ -4,13 +4,14 @@
  */
 package model;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 
 /**
  *
  * @author yuuya
  */
-public class DataModel {
+public class DataModel implements Serializable {
     private int id;
     private ZonedDateTime additionalDate;
     private String name;
