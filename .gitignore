@@ -38,3 +38,4 @@ bin
 *.bak
 
 /.gradle/
+/.devcontainer
