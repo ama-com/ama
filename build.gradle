@@ -28,12 +28,3 @@ dependencies {
     implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
     runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.0'
 }
-
-war {
-    webAppDirName = 'src/main/webapp' // Webアプリケーションのディレクトリ
-    archiveFileName = 'ama.war' // WARファイルの名前（任意）
-
-    webInf {
-        from 'src/main/webapp/WEB-INF'
-    }
-}
