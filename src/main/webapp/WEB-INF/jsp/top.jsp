@@ -7,6 +7,19 @@
 <meta charset="UTF-8">
 <title>Top</title>
 </head>
+	<nav>
+		<ul>
+			<li>
+				<a href = "Authentication">ログイン</a>
+			</li>
+			<li>
+				<a href = "AccountRegistration">会員登録</a>
+			</li>
+			<li>
+				<a href = "/jsp/test.html">test</a>
+			</li>
+		</ul>
+	</nav>
 <body>
     <c:forEach var="product" items="${productList}">
         <div>

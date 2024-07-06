@@ -24,12 +24,13 @@ public class GeneralServlet extends HttpServlet implements Servlet {
 		
 		if (object != null) {
 			if ( object instanceof Account) {
-				RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/administrator.jsp");
+				String view = "WEB-INF/jsp/general.jsp";
+				RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 				dispatcher.forward(request, response);
 			}
 		}
 		
-		response.sendRedirect("GeneralServlet");
+		response.sendRedirect("Authentication");
 	}
 
 	/**
