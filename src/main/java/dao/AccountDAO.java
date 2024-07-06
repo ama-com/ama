@@ -8,15 +8,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
 import model.Account;
 /**
  *
  * @author yuuya
  */
-public class AccountDAO implements Serializable, DAO {
+public class AccountDAO implements DAO<Account> {
    public List<Account> searchAll() {
        List<Account> accountList = new ArrayList<>();
        
@@ -41,4 +41,28 @@ public class AccountDAO implements Serializable, DAO {
        }
        return accountList;
    }
+
+@Override
+public List<Account> search(Account obj) {
+	// TODO 自動生成されたメソッド・スタブ
+	return null;
+}
+
+@Override
+public boolean create(Account obj) {
+	// TODO 自動生成されたメソッド・スタブ
+	return false;
+}
+
+@Override
+public boolean remove(Account obj) {
+	// TODO 自動生成されたメソッド・スタブ
+	return false;
+}
+
+@Override
+public boolean update(Account obj) {
+	// TODO 自動生成されたメソッド・スタブ
+	return false;
+}
 }
