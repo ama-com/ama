@@ -10,7 +10,7 @@ import java.util.List;
 
 import model.Product;
 
-public class ProductDAO implements DAO {
+public class ProductDAO implements DAO<Product> {
 	public List<Product> searchAll() {
 		List<Product> productList = new ArrayList<>();
 	
@@ -69,5 +69,23 @@ public class ProductDAO implements DAO {
 	    	   return null;
 	       }
 		return productList;
+	}
+
+	@Override
+	public boolean create(Product obj) {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	@Override
+	public boolean remove(Product obj) {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	@Override
+	public boolean update(Product obj) {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
 	}
 }

@@ -8,7 +8,7 @@ package model;
  *
  * @author yuuya
  */
-public class Account {
+public class Account extends DataModel {
     private String password;
     private boolean isAdmin;
 
