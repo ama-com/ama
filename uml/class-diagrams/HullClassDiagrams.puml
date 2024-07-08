@@ -61,6 +61,7 @@ class AddCartServlet extends HttpServlet {
 }
 note bottom of AddCartServlet
 カートに商品を追加する
+（まずは購入機能なので優先度低い）
 end note
 
 class removeCartServlet extends HttpServlet {
@@ -69,6 +70,7 @@ class removeCartServlet extends HttpServlet {
 }
 note bottom of removeCartServlet
 カートから商品を削除する
+（まずは購入機能なので優先度低い）
 end note
 
 class OrderServlet extends HttpServlet {
@@ -78,6 +80,7 @@ class OrderServlet extends HttpServlet {
 
 note bottom of OrderServlet
 カートに保有する商品を購入する
+（商品を購入する。優先度高）
 end note
 
 class RankingServlet extends HttpServlet {
