@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="POST" action="/Product" enctype="multipart/form-data">
+	<form method="POST" action="/ama/Product" enctype="multipart/form-data">
 		<div>
 			<label for="name">商品名</label>
 			<input type="text" name="name" />

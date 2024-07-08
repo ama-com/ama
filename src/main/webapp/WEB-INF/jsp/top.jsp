@@ -16,7 +16,7 @@
 				<a href = "AccountRegistration">会員登録</a>
 			</li>
 			<li>
-				<a href = "/jsp/test.html">test</a>
+				<a href = "/ama/test.html">test</a>
 			</li>
 		</ul>
 	</nav>

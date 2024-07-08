@@ -38,3 +38,5 @@ Thumbs.db
 
 # Docker Dev Container
 /.devcontainer
+/.apt_generated/
+/.apt_generated_tests/

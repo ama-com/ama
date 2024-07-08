@@ -13,9 +13,24 @@ import java.time.ZonedDateTime;
  */
 public class DataModel implements Serializable {
     private int id;
-    private ZonedDateTime additionalDate;
+    private ZonedDateTime additionalDateTime;
     private String name;
-    private String imagePass;
+    private String imagePath;
+    
+    DataModel() {
+    	
+    }
+    DataModel(String name, String imagePath) {
+    	this.name = name;
+    	this.imagePath = imagePath;
+    }
+    
+    DataModel(int id, ZonedDateTime additionalDateTime, String name, String imagePath) {
+    	this.id = id;
+    	this.additionalDateTime = additionalDateTime;
+    	this.name = name;
+    	this.imagePath = imagePath;
+    }
 
     /**
      * @return the id
@@ -35,14 +50,14 @@ public class DataModel implements Serializable {
      * @return the additionalDate
      */
     public ZonedDateTime getAdditionalDate() {
-        return additionalDate;
+        return additionalDateTime;
     }
 
     /**
      * @param additionalDate the additionalDate to set
      */
     public void setAdditionalDate(ZonedDateTime additionalDate) {
-        this.additionalDate = additionalDate;
+        this.additionalDateTime = additionalDate;
     }
 
     /**
@@ -63,13 +78,13 @@ public class DataModel implements Serializable {
      * @return the imagePass
      */
     public String getImagePass() {
-        return imagePass;
+        return imagePath;
     }
 
     /**
      * @param imagePass the imagePass to set
      */
     public void setImagePass(String imagePass) {
-        this.imagePass = imagePass;
+        this.imagePath = imagePass;
     }
 }
