@@ -5,6 +5,7 @@
 package model;
 
 import java.io.Serializable;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 /**
@@ -17,9 +18,25 @@ public class Product extends DataModel implements Serializable{
     private int stock;
     private List<String> subImagePaths;
 
-    /**
-     * @return the explanation
-     */
+    public Product() {
+    	
+    }
+    public Product(String name, String explanation, int price, int stock, String filePath, List<String> subImagePaths) {
+    	super(name,filePath);
+    	this.explanation = explanation;
+    	this.price = price;
+    	this.stock = stock;
+    	this.subImagePaths = subImagePaths;
+    }
+    
+    public Product(int id, ZonedDateTime additionalDateTime, String name, String imagePath,  String explanation, int price, int stock, String filePath, List<String> subImagePaths) {
+    	super(id, additionalDateTime, name, imagePath);
+    	this.explanation = explanation;
+    	this.price = price;
+    	this.stock = stock;
+    	this.subImagePaths = subImagePaths;
+    	
+    }
     public String getExplanation() {
         return explanation;
     }
