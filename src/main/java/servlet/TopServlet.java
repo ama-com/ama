@@ -39,6 +39,7 @@ public class TopServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         request.setCharacterEncoding("UTF-8");
         // POSTメソッドの処理（今回はコメントアウト）
     }
