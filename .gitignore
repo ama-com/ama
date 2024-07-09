@@ -24,6 +24,7 @@ Thumbs.db
 # Gradle
 /.gradle
 !gradle-wrapper.jar
+.classpath
 
 # Maven
 /target
