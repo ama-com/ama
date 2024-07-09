@@ -11,11 +11,8 @@ import java.util.List;
  *
  * @author yuuya
  */
-<<<<<<< HEAD
 public class ProductList implements Serializable{
-=======
-public class ProductList extends DataModel implements Serializable{
->>>>>>> branch 'main' of git@github.com:ama-com/ama.git
+
 	List<Product> productList;
 
 	public List<Product> getProductList() {
