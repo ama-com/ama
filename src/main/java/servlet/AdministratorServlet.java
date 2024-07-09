@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import model.Account;
+import model.AccountData;
 
 @WebServlet("/Administrator")
 public class AdministratorServlet extends HttpServlet {
@@ -19,13 +19,13 @@ public class AdministratorServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession();
 		
-		Object object = session.getAttribute("account");
+		Object object = session.getAttribute("AccountData");
 		
 		if (object != null) {
 			
-			if ( object instanceof Account) {
-				Account account = (Account)session.getAttribute("account");
-				if (account.getIsAdmin()) {
+			if ( object instanceof AccountData) {
+				AccountData AccountData = (AccountData)session.getAttribute("AccountData");
+				if (AccountData.getIsAdmin()) {
 					RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/administrator.jsp");
 					dispatcher.forward(request, response);
 				}

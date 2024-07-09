@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import model.Account;
+import model.AccountData;
 
 @WebServlet("/General")
 public class GeneralServlet extends HttpServlet implements Servlet {
@@ -20,10 +20,10 @@ public class GeneralServlet extends HttpServlet implements Servlet {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession();
 		
-		Object object = session.getAttribute("account");
+		Object object = session.getAttribute("AccountData");
 		
 		if (object != null) {
-			if ( object instanceof Account) {
+			if ( object instanceof AccountData) {
 				String view = "WEB-INF/jsp/general.jsp";
 				RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 				dispatcher.forward(request, response);
