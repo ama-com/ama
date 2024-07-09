@@ -5,6 +5,7 @@
 package model;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.List;
 
 /**
@@ -20,6 +21,40 @@ public class Product extends DataModel implements Serializable{
     /**
      * @return the explanation
      */
+=======
+import java.time.ZonedDateTime;
+import java.util.List;
+
+/**
+ *
+ * @author yuuya
+ */
+public class Product extends DataModel implements Serializable{
+    private String explanation;
+    private int price;
+    private int stock;
+    private List<String> subImagePaths;
+
+    public Product() {
+    	
+    }
+    public Product(String name, String explanation, int price, int stock, String filePath, List<String> subImagePaths) {
+    	super(name,filePath);
+    	this.explanation = explanation;
+    	this.price = price;
+    	this.stock = stock;
+    	this.subImagePaths = subImagePaths;
+    }
+    
+    public Product(int id, ZonedDateTime additionalDateTime, String name, String imagePath,  String explanation, int price, int stock, String filePath, List<String> subImagePaths) {
+    	super(id, additionalDateTime, name, imagePath);
+    	this.explanation = explanation;
+    	this.price = price;
+    	this.stock = stock;
+    	this.subImagePaths = subImagePaths;
+    	
+    }
+>>>>>>> branch 'main' of git@github.com:ama-com/ama.git
     public String getExplanation() {
         return explanation;
     }
