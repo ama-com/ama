@@ -25,7 +25,7 @@
 			<input type="text" name="stock" />
 		</div>
 			<label for="image">画像</label>
-			<input type="file" name="image" multiple/>
+			<input type="file" name="image"/>
 		<div>
 			<input type="submit" value="登録する">
 		</div>

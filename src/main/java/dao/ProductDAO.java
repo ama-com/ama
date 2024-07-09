@@ -63,7 +63,29 @@ public class ProductDAO implements DAO<Product> {
 	       }
 	       
 	       try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
-	    	   
+	           String sql = "SELECT `id`, `name`, `exeplanation`, `price`, `stock`, `mainImage` FROM `Product`";
+	           PreparedStatement pStmt = conn.prepareStatement(sql);
+	           
+	           ResultSet rs = pStmt.executeQuery();
+	           
+	           while (rs.next()) {
+	        	   int productId = rs.getInt("ID");
+	        	   String name = rs.getString("name");
+	        	   String explanation = rs.getString("explanation");
+	        	   int price = rs.getInt("price");
+	        	   int stock = rs.getInt("stock");
+	        	   String mainImagePass = rs.getString("mainImagePass");
+	        	   
+	        	   Product product1 = new Product();
+	        	   product1.setId(productId);
+	        	   product1.setName(name);
+	        	   product1.setExplanation(explanation);
+	        	   product1.setPrice(price);
+	        	   product1.setStock(stock);
+	        	   product1.setImagePass(mainImagePass);
+	        	   
+	        	   productList.add(product);
+	           }
 	       } catch (SQLException e) {
 	    	   e.printStackTrace();
 	    	   return null;
