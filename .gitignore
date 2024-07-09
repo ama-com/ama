@@ -8,6 +8,8 @@
 /.project
 /.classpath
 /.settings
+*.component
+org.eclipse.wst.common*
 
 # IntelliJ IDEA
 /.idea
