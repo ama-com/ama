@@ -1,184 +1,249 @@
 @startuml
 
-class RankingServlet {
-    # doGet() : void
-    # doPost() : void
-}
+package {
 
-class Ranking {
-    {method} + getRanking(): void
-}
-
-RankingServlet "1" -- "1" Ranking : create
-
-class AuthenticationServlet {
-    {method} # doGet(): void
-    {method} # doPost(): void
-}
-
-class Authentication {
-    {method} + login(account: Account): boolean
-    {method} + logout(account: Account): boolean
-}
-
-AuthenticationServlet "1" -- "1" Authentication : create
-
-class AccountRegistrationServlet {
-    {method} + login(account: Account): boolean
-    {method} + logout(account: Account): boolean
-}
-
-class AccountRegistration {
-    {method} + createAccount(account: Account): boolean
-    {method} + searchAccount(): List<Account>
-}
-
-AccountRegistrationServlet -- AccountRegistration : create
-
-class GeneralServlet {
+interface HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class CartServlet {
+class Top extends HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class Cart {
-    {method} + getCart(account: Account): void
-    {method} + updateCart(cart: Cart): void
-    {method} + deleteCart(cart: Cart): void
-}
-
-CartServlet "1" -- "1" Cart : create
-
-class OrderServlet {
+note bottom of Top
+訪問したときに一番最初に見せる。
+出来たらランキングと置き換え
+end note
+class LoginServlet extends HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class OrderManagement {
-    - accountId: int
-    - orderServlet(account: Account)
-    {method} + getOrder(account: Account): void
-    {method} + removeOrder(): void
+note bottom of LoginServlet
+ログインを行う
+end note
+
+class LogoutServlet extends HttpServlet {
+    # doGet(): void
 }
 
-OrderServlet -- OrderManagement : creates
+note bottom of LogoutServlet
+セッションを削除してログアウトする
+end note
 
-class AdministratorServlet {
+class AccountCreateServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
+}
+note bottom of AccountCreateServlet
+アカウントを作成する
+end note
+
+class AccountSearchServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
+}
+note bottom of AccountSerchServlet
+アカウントを検索する。
+admin限定
+end note
+
+class AccountRemoveServlet extends HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class ProductServlet {
+class AddCartServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
+}
+note bottom of AddCartServlet
+カートに商品を追加する
+（まずは購入機能なので優先度低い）
+end note
+
+class removeCartServlet extends HttpServlet {
+	# doGet(): void
+	# doPost(): void
+}
+note bottom of removeCartServlet
+カートから商品を削除する
+（まずは購入機能なので優先度低い）
+end note
+
+class OrderServlet extends HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class ProductRegister {
-    {method} + selectAll(): void
-    {method} + createProduct(product: Product): boolean
-    {method} + removeProduct(product: Product): boolean
-    {method} + updateProduct(oldProduct: Product, newProduct: Product): boolean
+note bottom of OrderServlet
+カートに保有する商品を購入する
+（商品を購入する。優先度高）
+end note
+
+class RankingServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
 }
+note bottom of RankingServlet
+ランキングを表示する
+end note
 
-ProductServlet -- ProductRegister : create
-
-class AccountManagementServlet {
+class ProductServlet extends HttpServlet {
     # doGet(): void
     # doPost(): void
 }
 
-class AccountManagement {
-    {method} + searchAll(): void
-    {method} + search(account: Account): List<Account>
-    {method} + updateAccount(account: Account): boolean
-    {method} + removeAccount(account: Account): boolean
+class GeneralServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
+}
+note bottom of GeneralServlet
+一般ユーザーの画面
+end note
+
+class AdministratorServlet extends HttpServlet {
+    # doGet(): void
+    # doPost(): void
 }
 
-AccountManagementServlet -- AccountManagement : create
-
-interface DAO {
-    + JDBC_URL: String
-    + DB_USER: String
-    + DB_PASS: String
+note bottom of AdministratorServlet
+特権ユーザーの画面
+end note
 }
 
-class AccountDAO implements DAO {
-    {method} + searchAll(): List<Account>
-    {method} + search(account: Account): List<Account>
-    {method} + create(account: Account): boolean
-    {method} + remove(account: Account): boolean
-    {method} + update(account: Account): boolean
+package model {
+class Account {
+	- AccountData: accountData
+	+ Account(AccountData)
+    + login(): boolean
+    + logout(): boolean
+    + createAccount(): boolean
+    + removeAccount(): boolean
+    + addCart(): boolean
+    + removeCart(): boolean
+    + buyCart(): boolean
 }
 
-class ProductDAO implements DAO {
-    {method} + searchAll(): List<Product>
-    {method} + search(product: Product): List<Product>
-    {method} + create(product: Product): boolean
-    {method} + remove(product: Product): boolean
-    {method} + update(oldProduct: Product, newProduct: Product): boolean
+note top of Account
+アカウントの保有者が出来るメソッド
+end note
+
+class Product {
+    + createProduct(product: Product)
+    + removeProduct(product: Product)
+    + updateProduct(product: Product)
+}
+note top of Product
+商品に対して出来るメソッド
+end note
+
+class Order {
+	- AccountData: account
+	- ProductData: product
+	+ Order(account: Account, product: Product)
+    + createOrder()
+    + removeOrder()
+}
+
+note top of Order
+購入するメソッド
+end note
+}
+package DAO {
+interface DAO<T> {
+    + searchAll(): List<T>
+    + search(t: T): List<T>
+    + create(t: T): boolean
+    + remove(t: T): boolean
+    + update(t: T): boolean
+}
+
+note top of DAO
+データーベースにアクセスする
+end note
+
+class AccountDAO implements DAO{
+    + searchAll(): List<Account>
+    + search(account: Account): List<Account>
+    + create(account: Account): boolean
+    + remove(account: Account): boolean
+    + update(account: Account): boolean
+}
+
+class ProductDAO implements DAO{
+    + searchAll(): List<Product>
+    + search(product: Product): List<Product>
+    + create(product: Product): boolean
+    + remove(product: Product): boolean
+    + update(product: Product): boolean
 }
 
 class OrderDAO implements DAO {
-    {method} + searchAll(): List<Order>
-    {method} + search(order: Order): List<Order>
-    {method} + create(order: Order): boolean
-    {method} + remove(order: Order): boolean
-    {method} + update(order: Order): boolean
+    + searchAll(): List<Order>
+    + search(order: Order): List<Order>
+    + create(order: Order): boolean
+    + remove(order: Order): boolean
+    + update(order: Order): boolean
 }
-
+}
+package model {
 class DataModel {
     - id: int
-    - additionalDate: ZonedDateTime
+    - additionalDate: String
     - name: String
-    - imagePass: String
-    {method} + getId(): int
-    {method} + setId(id: int): void
-    {method} + getAdditionalDate(): ZonedDateTime
-    {method} + setAdditionalDate(additionalDate: ZonedDateTime): void
-    {method} + getName(): String
-    {method} + setName(name: String): void
-    {method} + getImagePath(): String
-    {method} + setImagePath(imagePath: String): void
+    - imagePath: String
+    + getId(): int
+    + setId(id: int): void
+    + getAdditionalDate(): String
+    + setAdditionalDate(additionalDate: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getImagePath(): String
+    + setImagePath(imagePath: String): void
 }
 
-class Account extends DataModel {
+note top of DataModel
+データモデルとして使用します
+end note
+
+class AccountData extends DataModel {
     - password: String
     - isAdmin: boolean
-    {method} + setPassword(password: String): void
-    {method} + setIsAdmin(isAdmin: boolean): void
-    {method} + getPassword(): String
-    {method} + getIsAdmin(): boolean
+    + setPassword(password: String): void
+    + setIsAdmin(isAdmin: boolean): void
+    + getPassword(): String
+    + getIsAdmin(): boolean
 }
 
-class Product extends DataModel {
+class ProductData extends DataModel {
     - explanation: String
     - price: int
     - stock: int
-    - subImagePaths: ArrayList<String>
-    {method} + getExplanation(): String
-    {method} + setExplanation(explanation: String): void
-    {method} + getPrice(): int
-    {method} + setPrice(price: int): void
-    {method} + getStock(): int
-    {method} + setStock(stock: int): void
-    {method} + getSubImagePaths(): ArrayList<String>
-    {method} + setSubImagePaths(subImagePaths: ArrayList<String>): void
+    - subImagePaths: List<String>
+    + getExplanation(): String
+    + setExplanation(explanation: String): void
+    + getPrice(): int
+    + setPrice(price: int): void
+    + getStock(): int
+    + setStock(stock: int): void
+    + getSubImagePaths(): List<String>
+    + setSubImagePaths(subImagePaths: List<String>): void
 }
 
-class Order extends DataModel {
+class OrderData extends DataModel {
     - accountId: int
     - productId: int
     - pieces: int
-    {method} + getAccountId(): int
-    {method} + setAccountId(accountId: int): void
-    {method} + getProductId(): int
-    {method} + setProductId(productId: int): void
-    {method} + getPieces(): int
-    {method} + setPieces(pieces: int): void
+    + getAccountId(): int
+    + setAccountId(accountId: int): void
+    + getProductId(): int
+    + setProductId(productId: int): void
+    + getPieces(): int
+    + setPieces(pieces: int): void
+}
 }
 
 @enduml
