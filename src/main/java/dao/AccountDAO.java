@@ -11,14 +11,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Account;
+import model.AccountData;
+import model.LoginData;
 /**
  *
  * @author yuuya
  */
-public class AccountDAO implements DAO<Account> {
-   public List<Account> searchAll() {
-       List<Account> accountList = new ArrayList<>();
+public class AccountDAO implements DAO<AccountData> {
+   public List<AccountData> searchAll() {
+       List<AccountData> AccountDataList = new ArrayList<>();
        
        try {
            Class.forName("org.mariadb.jdbc.Driver");
@@ -28,40 +29,117 @@ public class AccountDAO implements DAO<Account> {
        }
        
        try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
-           String sql = "";
+           String sql = "SELECT ID, NAME, PASSWORD, IMAGE, ISADMIN FROM AccountData GROUP BY DESK";
            PreparedStatement pStmt = conn.prepareStatement(sql);
            
            ResultSet rs = pStmt.executeQuery();
            
            while (rs.next()) {
-               Account account = new Account();
+               int id = rs.getInt("id");
+               String name = rs.getString("NAME");
+               String password = rs.getString("PASSWORD");
+               String image = rs.getString("IMAGE");
+               boolean isAdmin = rs.getBoolean("ISADMIN");
+               
+               AccountData AccountData = new AccountData();
+               AccountData.setId(id);
+               AccountData.setName(name);
+               AccountData.setPassword(password);
+               AccountData.setImagePass(image);
+               AccountData.setIsAdmin(isAdmin);
+               
+               AccountDataList.add(AccountData);
            }
        } catch (SQLException e) {
            
        }
-       return accountList;
+       return AccountDataList;
    }
 
 @Override
-public List<Account> search(Account obj) {
+public List<AccountData> search(AccountData obj) {
 	// TODO 自動生成されたメソッド・スタブ
-	return null;
+    List<AccountData> AccountDataList = new ArrayList<>();
+    
+    try {
+        Class.forName("org.mariadb.jdbc.Driver");
+    } catch (ClassNotFoundException e) {
+        throw new IllegalStateException(
+        "JDBCドライバを読み込めませんでした");
+    }
+    
+    try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
+        String sql = "SELECT ID, NAME, PASSWORD, IMAGE, ISADMIN FROM AccountData WHERE NAME=?, PASSWORD=?";
+        PreparedStatement pStmt = conn.prepareStatement(sql);
+        
+        pStmt.setString(1, obj.getName());
+        pStmt.setString(2, obj.getPassword());
+        
+        ResultSet rs = pStmt.executeQuery();
+        
+        while (rs.next()) {
+            int id = rs.getInt("id");
+            String name = rs.getString("NAME");
+            String password = rs.getString("PASSWORD");
+            String image = rs.getString("IMAGE");
+            boolean isAdmin = rs.getBoolean("ISADMIN");
+            
+            AccountData AccountData = new AccountData();
+            AccountData.setId(id);
+            AccountData.setName(name);
+            AccountData.setPassword(password);
+            AccountData.setImagePass(image);
+            AccountData.setIsAdmin(isAdmin);
+            
+            AccountDataList.add(AccountData);
+        }
+    } catch (SQLException e) {
+        
+    }
+    return AccountDataList;
 }
 
+
+public boolean login(LoginData obj) {
+    List<AccountData> AccountDataList = new ArrayList<>();
+    
+    try {
+        Class.forName("org.mariadb.jdbc.Driver");
+    } catch (ClassNotFoundException e) {
+        throw new IllegalStateException(
+        "JDBCドライバを読み込めませんでした");
+    }
+    
+    try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
+        String sql = "SELECT NAME, PASSWORD, FROM AccountData WHERE NAME=?, PASSWORD=?";
+        PreparedStatement pStmt = conn.prepareStatement(sql);
+        
+        pStmt.setString(1, obj.getUserId());
+        pStmt.setString(2, obj.getPass());
+        
+        ResultSet rs = pStmt.executeQuery();
+        if (rs.next()) {
+        	return true;
+        }
+    } catch (SQLException e) {
+        return false;
+    }
+    return false;
+}
 @Override
-public boolean create(Account obj) {
+public boolean create(AccountData obj) {
 	// TODO 自動生成されたメソッド・スタブ
 	return false;
 }
 
 @Override
-public boolean remove(Account obj) {
+public boolean remove(AccountData obj) {
 	// TODO 自動生成されたメソッド・スタブ
 	return false;
 }
 
 @Override
-public boolean update(Account obj) {
+public boolean update(AccountData obj) {
 	// TODO 自動生成されたメソッド・スタブ
 	return false;
 }
