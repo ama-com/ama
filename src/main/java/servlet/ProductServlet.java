@@ -1,11 +1,9 @@
 package servlet;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
+import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -14,6 +12,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
 
 @WebServlet("/Product")
 @MultipartConfig
@@ -22,7 +21,7 @@ public class ProductServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String view = "WEB-INF/jsp/ProductForm.jsp";
+		String view = "WEB-INF/jsp/ProductCreate.jsp";
 		RequestDispatcher dispatcer = request.getRequestDispatcher(view);
 		dispatcer.forward(request, response);
 	}
@@ -30,47 +29,17 @@ public class ProductServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		create Upload file
-		String uploadPath = getServletContext().getRealPath("/") + File.separator + "uploads";
-
-        String fname = request.getParameter("path");
-        String dir = getServletContext().getRealPath("/");
-        BufferedImage im = null;
-        
-        // イメージの読み込み
-        File f = new File(dir + fname);
-        if (f.exists()) {
-            try {
-                im = ImageIO.read(f);
-            } catch (IOException e) {
-                System.out.println("can't read from file.");
-                im = new BufferedImage(300,200,
-                        BufferedImage.TYPE_INT_RGB); // 仮のイメージ
-            }
-        } else {
-            im = new BufferedImage(300,200,
-                    BufferedImage.TYPE_INT_RGB); // 仮のイメージ
-        }
-
-        // イメージの書き出し
-        FileOutputStream out = null;
-        try {
-            out = new FileOutputStream(dir + "new_saved.png");
-            ImageIO.write(im,"png",out);
-            out.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally{
-            try {
-                out.close();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-        }
-        
-        // リダイレクト
-        getServletContext().getRequestDispatcher("/test.jsp")
-                .forward(request, response);
-    }
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("name");
+		String explanation = request.getParameter("explanation");
+		int price = Integer.parseInt(request.getParameter("price"));
+		int stock = Integer.parseInt(request.getParameter("stock"));
+		List<String> fileNames = new ArrayList();
+		
+		String uploadPath = getServletContext().getRealPath("") + File.separator + "uploads";
+		
+		List<Part> parts = new ArrayList<Part>(request.getParts());
+		
+	}
 
 }

@@ -11,8 +11,7 @@ import java.util.List;
  *
  * @author yuuya
  */
-public class ProductList implements Serializable{
-
+public class ProductList extends DataModel implements Serializable{
 	List<Product> productList;
 
 	public List<Product> getProductList() {

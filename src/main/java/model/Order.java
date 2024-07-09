@@ -1,9 +1,9 @@
 package model;
 
 public class Order extends DataModel {
-	int accountId;
-	int productid;
-	int pieces;
+	private int accountId;
+	private int productid;
+	private int pieces;
 	public int getAccountId() {
 		return accountId;
 	}
