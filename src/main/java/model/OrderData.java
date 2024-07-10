@@ -1,8 +1,8 @@
 package model;
 
-public class Order extends DataModel {
+public class OrderData extends DataModel {
 	private int accountId;
-	private int productid;
+	private int productId;
 	private int pieces;
 	public int getAccountId() {
 		return accountId;
@@ -10,11 +10,11 @@ public class Order extends DataModel {
 	public void setAccountId(int accountId) {
 		this.accountId = accountId;
 	}
-	public int getProductid() {
-		return productid;
+	public int getProductId() {
+		return productId;
 	}
-	public void setProductid(int productid) {
-		this.productid = productid;
+	public void setProductId(int productid) {
+		this.productId = productid;
 	}
 	public int getPieces() {
 		return pieces;

@@ -1,6 +1,5 @@
 package servlet;
 
-import java.io.File;
 import java.io.IOException;
 
 import jakarta.servlet.RequestDispatcher;
@@ -11,17 +10,18 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
+import model.FileUploader;
+import model.Product;
 import model.ProductData;
 
-@WebServlet("/Product")
+@WebServlet("/ProductCreate")
 @MultipartConfig
-public class ProductServlet extends HttpServlet {
+public class ProductCreateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String UPLOAD_DIR = "uploads";
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String view = "WEB-INF/jsp/ProductCreate.jsp";
+		String view = "WEB-INF/jsp/ProductForm.jsp";
 		RequestDispatcher dispatcer = request.getRequestDispatcher(view);
 		dispatcer.forward(request, response);
 	}
@@ -35,28 +35,29 @@ public class ProductServlet extends HttpServlet {
 		int price = Integer.parseInt(request.getParameter("price"));
 		int stock = Integer.parseInt(request.getParameter("stock"));
 		
-		String applicationPath = request.getServletContext().getRealPath("");
-		String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
-		
-		File uploadDir = new File(uploadFilePath);
-		if (!uploadDir.exists()) {
-			uploadDir.mkdirs();
-		}
-		
 		Part filePart = request.getPart("image");
-		String fileName = filePart.getSubmittedFileName();
-		String filePath = uploadFilePath + File.separator + fileName;
-		filePart.write(filePath);
+		String applicationPath = request.getServletContext().getRealPath("");
+		System.out.println(applicationPath);
+
+		FileUploader uploader = new FileUploader(filePart, applicationPath);
+		String filePath = uploader.fileUploader();
 		
 		ProductData productData = new ProductData();
 		
 		productData.setName(name);
-		productData.setExplanation(explanation);
+		productData.setExplanation(explanation);		
 		productData.setPrice(price);
 		productData.setStock(stock);
 		productData.setImagePass(filePath);
 		
-		RequestDispatcher("WEB-INF/jsp/productResult.jsp");
+		Product product = new Product(productData);
+		product.createProduct();
+		
+		request.setAttribute("Product", product);
+		
+		String view = "WEB-INF/jsp/ProductResult.jsp";
+		RequestDispatcher dispatcer = request.getRequestDispatcher(view);
+		dispatcer.forward(request, response);
 	}
 
 }

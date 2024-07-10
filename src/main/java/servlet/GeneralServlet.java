@@ -30,7 +30,7 @@ public class GeneralServlet extends HttpServlet implements Servlet {
 			}
 		}
 		
-		response.sendRedirect("Authentication");
+		response.sendRedirect("LoginServlet");
 	}
 
 	/**

@@ -10,9 +10,9 @@ import java.util.List;
 
 import model.Order;
 
-public class OrderDAO implements DAO<Order>{
-	public List<Order> searchAll() {
-		List<Order> OrderList = new ArrayList<>();
+public class OrderDAO implements DAO<OrderData>{
+	public List<OrderData> searchAll() {
+		List<OrderData> OrderList = new ArrayList<>();
 	
        try {
            Class.forName("org.mariadb.jdbc.Driver");
@@ -48,8 +48,8 @@ public class OrderDAO implements DAO<Order>{
    return OrderList;
 }
 
-public List<Order> search(Order Order) {
-	List<Order> OrderList = new ArrayList<>();
+public List<OrderData> search(OrderData Order) {
+	List<OrderData> OrderList = new ArrayList<>();
 	
        try {
            Class.forName("org.mariadb.jdbc.Driver");

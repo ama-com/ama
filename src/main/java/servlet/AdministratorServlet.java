@@ -32,7 +32,7 @@ public class AdministratorServlet extends HttpServlet {
 			}
 		}
 		
-		response.sendRedirect("GeneralServlet");
+		response.sendRedirect("General");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

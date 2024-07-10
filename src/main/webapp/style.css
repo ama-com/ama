@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* すべてに適用される設定 */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+    background-color: #f2fcff;
+}
+body {
+    margin: 0 0 0 0;
+
+}
+p,li,td {
+    line-height: 1.7;
+}
+a:link {
+
+    text-decoration: none;
+}a:visited {
+
+    text-decoration: none;
+}
+a:hover {
+
+    text-decoration: underline;
+}
+a:active {
+
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+}
+
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+/* すべてのページに適用　-　ヘッダー */
+.header {
+    padding-top: 40px;
+    background-image: url(images/stripe.png);
+    background-repeat: repeat-x;
+}
+.logo {
+    text-align: center;
+}
+
+.icon {
+
+    width: 200px;
+    height: 200px;          
+
+    border-radius:50%;
+
+    
+}
+
+
+nav ul {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+nav a:active {
+    text-decoration: none;
+}
+
+.search-form-6 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #80aaff;
+    border-radius: 24px;
+}
+
+.search-form-6:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search-form-6::before {
+    width: 45px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%20%3Cpath%20d%3D%22M23.7%2020.8%2019%2016.1c-.2-.2-.5-.3-.8-.3h-.8c1.3-1.7%202-3.7%202-6C19.5%204.4%2015.1%200%209.7%200S0%204.4%200%209.7s4.4%209.7%209.7%209.7c2.3%200%204.3-.8%206-2v.8c0%20.3.1.6.3.8l4.7%204.7c.4.4%201.2.4%201.6%200l1.3-1.3c.5-.5.5-1.2.1-1.6zm-14-5.1c-3.3%200-6-2.7-6-6s2.7-6%206-6%206%202.7%206%206-2.6%206-6%206z%22%20fill%3D%22%236a85a0%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E');
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.search-form-6 input {
+    width: 250px;
+    height: 40px;
+    padding: 5px 25px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+  a.btn--orange {
+    color: #fff;
+    background-color: #8dff81;
+    border-bottom: 2px solid #6ae85c;
+    margin-bottom: 10px;
+  }
+  a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #39e226;
+    border-bottom: 5px solid #6ae85c;
+    margin-bottom: 7px;
+  }
+  a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  }
+/* すべてのページに適用　-　メイン */
+main{
+    margin: 10px auto 90px auto;
+    max-width: 1000px;
+}
+
+.cart{
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    margin:0 auto 1%;
+
+
+    border: solid 0.2em rgb(209, 209, 209);
+
+    width: auto;
+
+}
+.img-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin:20px;
+
+}
+.syosai-text{
+    margin: 1px;
+    text-align: left;
+
+}
+.syosai{
+
+    text-align: center;
+    border: solid 0.2em rgb(209, 209, 209);
+    width: auto;
+}
+.button{
+    text-align: right;
+}
+a.btn--item{
+    margin-top: 3px;
+    color: #000000;
+    background: #ffde59;
+    border-bottom: 2px solid #feee3f;
+    margin-bottom: 10px;
+}
+a.btn--item:hover {
+    margin-top: 3px;
+    color: #000000;
+    background: #ffc641;
+    border-bottom: 5px solid #ffe494;
+    margin-bottom: 7px;
+  }
+
+.price{
+    border-bottom: 2px solid #a7a6a6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.iemon{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.ranking{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap:10px
+
+    
+}
+.ran{
+    padding: 30px;
+    width: 25%;
+    border: solid 0.2em rgb(209, 209, 209);
+    text-align: center;
+}
+.ran3{
+    text-align: left;
+}
+.img-ran{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin:10px;
+
+
+}
+/* すべてのページに適用　-　フッター */
+.gotop {
+    text-align: center;
+}
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #acdfff;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* 個別のスタイル */
+/* index.html */
+.logo-whale {
+    text-align: center;
+}
+.shop-info {
+    border-collapse: collapse;
+}
+.shop-info th, .shop-info td {
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+}
+.shop-info th{
+    width: 112px;
+    text-align: left;
+    vertical-align: top;
+}
+/* menu.html */
+
+/* contact.html */
+form {
+    margin: 0 auto;
+    max-width: 640px;
+}
+input[type="text"], textarea {
+    padding: 6px;
+    width: 100%;
+    font-size: 1rem;
+}
+textarea{
+    height: 140px;
+}
+.submit {
+    text-align: center;
+}
+input[type="submit"] {
+    border: none;
+    padding: 20px;
+    width: 200px;
+    background-color: #253958;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* モバイル対応 */
+@media(max-width: 767px) {
+nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+    main {
+        padding: 0 4%;
+}
+
+/* index.html */
+.hero.index {
+    padding: 28vh 0;
+}
+
+/* menu.html */
+.item {
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-ran{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin:10px;
+
+
+}
+}

@@ -12,13 +12,13 @@ import java.util.List;
  * @author yuuya
  */
 public class ProductList extends DataModel implements Serializable{
-	List<Product> productList;
+	List<ProductData> ProductDataList;
 
-	public List<Product> getProductList() {
-		return productList;
+	public List<ProductData> getProductList() {
+		return ProductDataList;
 	}
 
-	public void setProductList(List<Product> productList) {
-		this.productList = productList;
+	public void setProductList(List<ProductData> ProductDataList) {
+		this.ProductDataList = ProductDataList;
 	}
 }

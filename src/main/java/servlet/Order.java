@@ -30,8 +30,8 @@ public class Order extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		Product p=(Product)request.getAttribute("product");
-		request.setAttribute("product",p);
+		Product p=(Product)request.getAttribute("product");//リクエストスコープからインスタンスを取得
+		request.setAttribute("product",p);//リクエストスコープにインスタンスを保存
 		
 		//Order.jspにフォワード
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/Order.jsp");

@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ama.com|Administrator</title>
+    <title>ama.com|アカウント登録</title>
     <link rel="stylesheet" href="style.css">
 </head>
 	<body>
@@ -30,16 +30,13 @@
         </nav>
 
     </header>
-=======
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
->>>>>>> branch 'main' of git@github.com:ama-com/ama.git
 <body>
-	<nav>
-		<a href="Product">商品追加</a>
-	</nav>
+    <h2 class="syosai-text">アカウント登録</h2>
+    <form action="RegisterServlet" method="post">
+        ユーザー名: <input type="text" name="username" required><br>
+        パスワード: <input type="password" name="password" required><br>
+        メールアドレス: <input type="email" name="email" required><br>
+        <input type="submit" value="登録">
+    </form>
 </body>
 </html>
