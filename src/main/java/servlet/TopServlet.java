@@ -9,7 +9,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Product;
+import model.ProductData;
 import model.TopModel;
 
 @WebServlet("/Top")
@@ -29,7 +29,7 @@ public class TopServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         TopModel topModel = new TopModel(); // データを取得するためのモデルを生成
-        List<Product> productList = topModel.execute(); // DAOからデータを取得
+        List<ProductData> productList = topModel.execute(); // DAOからデータを取得
 
         request.setAttribute("productList", productList);
 
